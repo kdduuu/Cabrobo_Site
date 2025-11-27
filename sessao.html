@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de Cabrobó</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="img/cabrobó.png" type="image/png">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar bg-white shadow-sm py-2 fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/logo.png" alt="Logo" height="45">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link fw-semibold me-3" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold me-3" href="eventos.html">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<br><br><br>
+
+<section>
+    <div class="container mt-5 col-lg-5">
+        <form action="index.php" method="POST" class="formulario p-4 bg-white text-dark rounded shadow">
+            <h3 class="text-center mb-4 text-dark">Se torne Organizador</h3>
+
+            <div class="mb-3">
+                <label class="form-label text-dark">Nome</label>
+                <input type="text" class="form-control bg-white text-dark border-dark" id="nome" name="nome">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label text-dark">CPF</label>
+                <input type="text" class="form-control bg-white text-dark border-dark" id="cpf" name="cpf">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label text-dark">E-mail</label>
+                <input type="email" class="form-control bg-white text-dark border-dark" id="email" name="email">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label text-dark">Senha</label>
+                <input type="password" class="form-control bg-white text-dark border-dark" id="senha" name="senha">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label text-dark">Confirme a senha</label>
+                <input type="password" class="form-control bg-white text-dark border-dark" id="confirme" name="confirmar_senha">
+            </div>
+
+            <div class="alert alert-warning text-center mt-4" role="alert">
+                Ao clicar em <strong>Criar Conta</strong>, você concorda com a <strong>Política de Privacidade</strong> 
+                e com os <strong>Termos de Uso</strong> do sistema.
+            </div>
+
+            <div class="d-grid">
+                <button type="submit" class="btn btn-dark fw-bold">CRIAR CONTA</button>
+            </div>
+
+            <p class="text-center mt-3 text-dark">
+                Já é organizador?
+                <a href="cadastro.html" class="text-dark fw-semibold">Clique aqui!</a>
+            </p>
+        </form>
+    </div>
+</section>
+
+<footer class="shadow-sm bg-white text-white pt-4 pb-3 mt-5 footer-full-width">
+    
+    <div class="shadow-top container-fluid px-0 pt-2">
+        
+        <div class="row align-items-center g-0">
+
+            <div class="col-md-3 text-start ps-4">
+                <img src="img/logo.png" alt="Simbolo da prefeitura de Cabrobó" style="max-height: 40px; width: 120px; height: auto;">
+            </div>
+
+            <div class="col-md-9 text-end pe-4">
+                <p class="mb-0 small footer-text"><strong>Desenvolvido por Kadu Almeida e Fernando Almeida &copy; 2025</strong></p>
+            </div>
+            
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
